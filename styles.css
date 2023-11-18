@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(-3px); /* Slight jump */
+    }
+    30% {
+      transform: translateY(3px); /* Settle back */
+    }
+    45%, 60% {
+      transform: translateY(-3px); /* Minor overshoot */
+    }
+    75% {
+      transform: translateY(2px); /* Settle into place */
+    }
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset default browser styles */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a base font to the body element */
+body {
+  font-family: "Poppins", "Arial", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  background: #fff;
+  margin-top: 20px;
+}
+
+/* Introduction section styles */
+.introduction p {
+  margin-bottom: 10px;
+}
+
+/* Book form styles */
+.book-form form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-group input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Link styles */
+a {
+  color: #333;
+}
+
+/* Add spacing between sections */
+section {
+  margin-bottom: 20px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.book-card:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.book-card p {
+  font-size: 0.8rem;
+}
+
+.removeButton {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  align-items: center;
+  width: 100%;
+}
+
+.removeButton:hover {
+  background-color: rgb(83, 22, 22);
+}
+
+.library h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}

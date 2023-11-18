@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Personal Library</h1>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <p>
+                Here you can add a book to your library. You can also mark a book as read or not read.<br>
+                You can also delete a book from your library.
+            </p>
+            <p>
+                This is a project from <a href="https://www.theodinproject.com">The Odin Project</a>
+            </p>
+        </section>
+
+        <section class="book-form">
+            <form action="submit">
+                <div class="form-group">
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" name="book" placeholder="Enter Book Title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" placeholder="Enter Author's Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" placeholder="Number of Pages" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="read">I have read this book:</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Add a Book">
+                </div>
+            </form>
+        </section>
+
+        <section class="library">
+            <h2>🔒 Your Library 🔒 </h2>
+            <div class="books-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <a href="https://github.com/paulcfo">paulcfo</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
